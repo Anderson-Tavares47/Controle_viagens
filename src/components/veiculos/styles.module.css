@@ -1,0 +1,95 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+    background-color: #02111e;
+}
+
+.container.with-sidebar-open {
+    margin-left: 240px;
+}
+
+.container.with-sidebar-closed {
+    margin-left: 60px;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px; /* Aumentado para 600px para inputs mais largos */
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-row label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 12px; /* Aumentado o padding para inputs mais confortáveis */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    outline: none;
+    margin-top: 8px;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    border-color: #007bff;
+}
+
+.form-row select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 5%22%3E%3Cpath fill=%22%23333%22 d=%22M2 0L0 2h4z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+.form-row select option {
+    padding: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.button-row button {
+    background-color: #009929;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-row button:hover {
+    background-color: #30a8f2;
+}

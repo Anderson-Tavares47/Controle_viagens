@@ -1,0 +1,70 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #02111e, #1A237E);
+  }
+  
+  .loginBox {
+    background: #091f33;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    border: 1px solid #2947a9;
+  }
+  
+  .loginHeader h1 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .loginHeader p {
+    margin-bottom: 20px;
+  }
+  
+  .loginInput {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #30A8F2;
+    background-color: rgba(48, 168, 242, 0.3); /* Altere a opacidade para ajuste de transparência */
+    color: #ffffff; /* Certifique-se de que o texto seja visível */
+    outline: none; /* Remove a borda preta padrão do foco */
+  }
+  
+  .loginInput:focus {
+    border-color: #30A8F2; /* Personaliza a cor da borda no foco */
+    box-shadow: 0 0 5px rgba(48, 168, 242, 0.5); /* Adiciona um leve efeito de brilho */
+  }
+  
+  .loginInput::placeholder {
+    color: rgba(48, 168, 242, 0.7); /* Placeholder com uma cor mais clara */
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    background: #009929;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .loginButton:hover {
+    background: #30a8f2;
+  }
+  
+  .subTitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  

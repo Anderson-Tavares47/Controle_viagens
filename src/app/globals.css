@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'FiraSansThinItalic';
+    src: url('/gps/public/font/FiraSans-Thin.otf') format('truetype'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'FiraSans', sans-serif;
+}
