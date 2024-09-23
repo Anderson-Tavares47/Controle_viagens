@@ -1,9 +1,10 @@
 .loadingContainer {
   position: fixed; /* Garante que o loading seja exibido fixamente */
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
   width: 100%;
-  height: 100vh;
+  height: auto; /* Ajusta para auto, já que não é necessário ocupar toda a altura */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +24,6 @@
   animation: spin 1s linear infinite;
   margin-bottom: 10px; /* Espaço entre o spinner e a mensagem */
 }
-
 
 @keyframes spin {
   to {
